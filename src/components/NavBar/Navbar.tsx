@@ -6,7 +6,6 @@ import me from "@/app/assets/me.png";
 import code from "@/app/assets/code.png";
 import banana from "@/app/assets/banana.png";
 import handshake from "@/app/assets/handshake.png";
-import Image from "next/image";
 import NavItem from "../NavItem/NavItem";
 
 export type NavBarSize = "s" | "l";
@@ -34,7 +33,7 @@ export default function NavBar({ straigth, size }: NavBarProps) {
             hoveredItem={hoveredItem}
             setHoveredItem={setHoveredItem}
           >
-            <Image src={img} alt={alt} />
+            <img src={img} alt={alt} />
           </NavItem>
         );
       })}

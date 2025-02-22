@@ -2,7 +2,6 @@ import * as React from "react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import path from "path";
 import fs from "fs/promises";
-import Image from "next/image";
 import MDXContainer from "@/components/MDXContainer/MDXContainer";
 
 export const metadata = {
@@ -16,9 +15,6 @@ export default async function About() {
   );
 
   return (
-    <MDXRemote
-      source={content}
-      components={{ img: Image, MDXContainer: MDXContainer }}
-    />
+    <MDXRemote source={content} components={{ MDXContainer: MDXContainer }} />
   );
 }
