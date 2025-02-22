@@ -30,7 +30,7 @@ export default function NavBar({ straigth, size }: NavBarProps) {
             hoveredItem={hoveredItem}
             setHoveredItem={setHoveredItem}
           >
-            <img src={`/${img}`} alt={alt} />
+            <img src={`/dani/${img}`} alt={alt} />
           </NavItem>
         );
       })}
