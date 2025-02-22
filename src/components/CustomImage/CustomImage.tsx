@@ -14,7 +14,11 @@ export default function CustomImage(props: React.HTMLProps<HTMLImageElement>) {
   return (
     <div className={styles.imgContainer}>
       <div className={styles.altContainer}>
-        <img ref={imgRef} src={`/dani${props.src}`} {...props} />
+        <img
+          ref={imgRef}
+          {...props}
+          src={`${isDev ? "" : "/dani/"}${props.src}`}
+        />
         {clicked ? (
           <span
             className={styles.altText}
