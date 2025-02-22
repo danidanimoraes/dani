@@ -35,7 +35,7 @@
 .straigth {
   .circle,
   .hoveredCircle {
-    @media (width < 600px) {
+    @media (width < 580px) {
       display: none;
     }
   }

@@ -3,10 +3,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import path from "path";
 import fs from "fs/promises";
 import MDXContainer from "@/components/MDXContainer/MDXContainer";
-
-export const metadata = {
-  title: "Danidani",
-};
+import CustomImage from "@/components/CustomImage/CustomImage";
 
 export default async function About() {
   const content = await fs.readFile(
@@ -15,6 +12,13 @@ export default async function About() {
   );
 
   return (
-    <MDXRemote source={content} components={{ MDXContainer: MDXContainer }} />
+    <MDXRemote
+      source={content}
+      components={{
+        MDXContainer: MDXContainer,
+        CustomImage: CustomImage,
+        img: CustomImage,
+      }}
+    />
   );
 }

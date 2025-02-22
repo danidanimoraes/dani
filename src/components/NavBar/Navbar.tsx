@@ -16,9 +16,24 @@ export default function NavBar({ straigth, size }: NavBarProps) {
 
   return (
     <div
-      className={`${styles.container} ${straigth ? "" : styles.notStraigth} `}
+      className={`${styles.container} ${
+        straigth ? styles.straigth : styles.notStraigth
+      } `}
       onMouseLeave={() => setHoveredItem("")}
     >
+      {straigth ? (
+        <NavItem
+          size="s"
+          key={HOME.href}
+          href={HOME.href}
+          text={HOME.text}
+          hoveredItem={hoveredItem}
+          setHoveredItem={setHoveredItem}
+          straigth={true}
+        >
+          <img src={HOME.img} alt={HOME.alt} />
+        </NavItem>
+      ) : null}
       {LINKS.map(({ href, text, alt, img }) => {
         return (
           <NavItem
@@ -30,7 +45,7 @@ export default function NavBar({ straigth, size }: NavBarProps) {
             setHoveredItem={setHoveredItem}
             straigth={straigth}
           >
-            <img src={`/dani/${img}`} alt={alt} />
+            <img src={img} alt={alt} />
           </NavItem>
         );
       })}
@@ -59,3 +74,10 @@ const LINKS = [
     alt: "Aperto de mãos",
   },
 ];
+
+const HOME = {
+  href: "/",
+  text: "Início",
+  img: "home.svg",
+  alt: "Ícone de casa",
+};

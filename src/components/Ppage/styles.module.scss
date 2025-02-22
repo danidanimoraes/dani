@@ -33,9 +33,11 @@
   header {
     display: flex;
     width: 100%;
+    padding: 32px;
     position: sticky;
     top: 0;
     border-bottom: 1px solid white;
+    align-items: center;
 
     a {
       text-decoration: none;
@@ -57,17 +59,13 @@
   }
 }
 
-.homeIcon {
-  cursor: pointer;
-}
-
 .navbarContainer {
-  padding: 32px;
-  width: 100%;
+  overflow-x: auto;
 }
 
 .bodyContainer {
   padding: 64px;
+  overflow-x: auto;
 
   p {
     max-width: 100ch;

@@ -6,6 +6,7 @@ import Tag from "@/components/Tag/Tag";
 import MDXContainer from "@/components/MDXContainer/MDXContainer";
 import Divider from "@/components/Divider/Divider";
 import DownloadButton from "@/components/DownloadButton/DownloadButton";
+import CustomImage from "@/components/CustomImage/CustomImage";
 
 export default async function Home() {
   const content = await fs.readFile(
@@ -21,6 +22,7 @@ export default async function Home() {
         MDXContainer: MDXContainer,
         Divider: Divider,
         DownloadButton: DownloadButton,
+        img: CustomImage,
       }}
     />
   );
