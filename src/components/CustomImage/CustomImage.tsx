@@ -4,7 +4,7 @@ import * as React from "react";
 import styles from "./styles.module.scss";
 
 export default function CustomImage(props: React.HTMLProps<HTMLImageElement>) {
-  const isDev = process.env.NODE_ENV === "dev";
+  const isDev = process.env.NODE_ENV === "development";
   const [clicked, setClicked] = React.useState(false);
   const imgRef = React.useRef(null);
   const maxWidthAltText = imgRef.current
