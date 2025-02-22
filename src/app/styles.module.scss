@@ -1,0 +1,26 @@
+.navWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.appRoot {
+  font-family: var(--font-overlock);
+  font-size: 1.5rem;
+
+  background-image: linear-gradient(
+    180deg,
+    hsl(176deg 73% 9%) 0%,
+    hsl(182deg 67% 8%) 21%,
+    hsl(191deg 62% 8%) 30%,
+    hsl(204deg 56% 8%) 39%,
+    hsl(229deg 51% 8%) 46%,
+    hsl(256deg 81% 6%) 54%,
+    hsl(256deg 81% 5%) 61%,
+    hsl(256deg 81% 4%) 69%,
+    hsl(256deg 81% 3%) 79%,
+    hsl(0deg 0% 0%) 100%
+  );
+}

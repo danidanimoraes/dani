@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  input,
+  textarea {
+    border-radius: 5px;
+    min-height: 1.5rem;
+    line-height: 2.2rem;
+    background-color: rgb(208, 180, 236);
+    border: 2px solid rgb(52, 18, 53);
+    color: rgb(52, 18, 53);
+    font-family: var(--font-overlock);
+    font-size: 2rem;
+    padding: 16px 32px;
+    margin-top: 8px;
+  }
+
+  textarea {
+    min-height: 4rem;
+  }
+
+  button {
+    border-radius: 10px;
+    border: 2px solid purple;
+    color: purple;
+    background-color: plum;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: 16px;
+    width: fit-content;
+  }
+}
+
+.field {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.counter {
+  align-self: end;
+}

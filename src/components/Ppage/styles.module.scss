@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 32px;
+
+  a {
+    text-decoration: underline;
+    color: rgb(202, 89, 225);
+  }
+
+  ul {
+    padding: 0 20px;
+    list-style: none;
+
+    li::before {
+      content: "⭐ ";
+      font-size: 1.2rem;
+    }
+  }
+
+  details > summary {
+    list-style-type: "▶️";
+  }
+
+  details[open] > summary {
+    list-style-type: "🔽";
+  }
+
+  details > div {
+    padding: 16px 32px;
+  }
+}
+
+.navbarContainer {
+  padding: 16px 0;
+}
+
+.bodyContainer {
+  padding: 32px;
+
+  p {
+    max-width: 100ch;
+  }
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.tagContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  flex-wrap: wrap;
+}

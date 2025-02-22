@@ -1,0 +1,51 @@
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #281a55;
+  box-shadow: -5px 5px 10px 10px #1b103d, 5px -5px 10px 10px #1b103d;
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.hoveredCircle {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: -5px 5px 10px 10px #3e2f6e, 5px -5px 10px 10px #3e2f6e;
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.l {
+  width: 150px;
+  height: 150px;
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.linkWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.navText {
+  font-family: var(--font-barriecito);
+  font-size: 1.4rem;
+}

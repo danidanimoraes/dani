@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.notStraigth {
+  a:nth-child(odd) {
+    margin-top: 164px;
+  }
+
+  a:nth-child(even) {
+    margin-bottom: 164px;
+  }
+}

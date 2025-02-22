@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+}
+
+.downloadBtn {
+  border-radius: 10px;
+  border: 2px solid purple;
+  color: purple;
+  background-color: plum;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: 16px;
+
+  &.btnLink {
+    text-decoration: none;
+    color: purple;
+  }
+}
