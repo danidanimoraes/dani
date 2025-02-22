@@ -4,7 +4,7 @@ import * as React from "react";
 import styles from "./styles.module.scss";
 
 export default function CustomImage(props: React.HTMLProps<HTMLImageElement>) {
-  const isProd = process.env.NODE_ENV === "production";
+  const isDev = process.env.NODE_ENV === "dev";
   const [clicked, setClicked] = React.useState(false);
   const imgRef = React.useRef(null);
   const maxWidthAltText = imgRef.current
@@ -16,7 +16,7 @@ export default function CustomImage(props: React.HTMLProps<HTMLImageElement>) {
       <div className={styles.altContainer}>
         <img
           ref={imgRef}
-          src={`${isProd ? "/dani" : ""}${props.src}`}
+          src={`${isDev ? "" : "/dani/"}${props.src}`}
           {...props}
         />
         {clicked ? (
