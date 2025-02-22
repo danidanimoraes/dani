@@ -2,7 +2,6 @@
 
 import styles from "./styles.module.scss";
 import * as React from "react";
-// import code from "@/app/assets/code.png";
 import NavItem from "../NavItem/NavItem";
 
 export type NavBarSize = "s" | "l";
