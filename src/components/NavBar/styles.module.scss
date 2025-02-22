@@ -1,14 +1,37 @@
 .container {
   display: flex;
   justify-content: space-around;
+
+  @media (width < 580px) {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 
 .notStraigth {
   a:nth-child(odd) {
     margin-top: 164px;
+
+    @media (width < 580px) {
+      margin-top: 0;
+      margin-left: 100px;
+    }
+
+    @media (width < 250px) {
+      margin-left: 0;
+    }
   }
 
   a:nth-child(even) {
     margin-bottom: 164px;
+
+    @media (width < 580px) {
+      margin-bottom: 0;
+      margin-right: 100px;
+    }
+
+    @media (width < 250px) {
+      margin-right: 0;
+    }
   }
 }

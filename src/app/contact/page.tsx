@@ -44,43 +44,49 @@ export default function Contact() {
       <form ref={form} onSubmit={sendEmail} className={styles.container}>
         <div className={styles.field}>
           <label>Nome</label>
-          <input
-            required
-            type="text"
-            name="user_name"
-            maxLength={55}
-            onChange={(event: ChangeEvent<HTMLInputElement>) =>
-              setName(event?.target.value)
-            }
-          />
-          <div className={styles.counter}>{name.length}/55</div>
+          <div className={styles.inputWithCounter}>
+            <input
+              required
+              type="text"
+              name="user_name"
+              maxLength={55}
+              onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                setName(event?.target.value)
+              }
+            />
+            <div className={styles.counter}>{name.length}/55</div>
+          </div>
         </div>
 
         <div className={styles.field}>
           <label>Email</label>
-          <input
-            required
-            type="text"
-            name="user_email"
-            maxLength={55}
-            onChange={(event: ChangeEvent<HTMLInputElement>) =>
-              setEmail(event?.target.value)
-            }
-          />
-          <div className={styles.counter}>{email.length}/55</div>
+          <div className={styles.inputWithCounter}>
+            <input
+              required
+              type="text"
+              name="user_email"
+              maxLength={55}
+              onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                setEmail(event?.target.value)
+              }
+            />
+            <div className={styles.counter}>{email.length}/55</div>
+          </div>
         </div>
 
         <div className={styles.field}>
           <label>Mensagem</label>
-          <textarea
-            required
-            name="message"
-            maxLength={230}
-            onChange={(event: ChangeEvent<HTMLTextAreaElement>) =>
-              setMsg(event?.target.value)
-            }
-          />
-          <div className={styles.counter}>{msg.length}/230</div>
+          <div className={styles.inputWithCounter}>
+            <textarea
+              required
+              name="message"
+              maxLength={230}
+              onChange={(event: ChangeEvent<HTMLTextAreaElement>) =>
+                setMsg(event?.target.value)
+              }
+            />
+            <div className={styles.counter}>{msg.length}/230</div>
+          </div>
         </div>
 
         <button type="submit">Enviar email</button>
