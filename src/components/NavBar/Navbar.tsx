@@ -43,7 +43,7 @@ const LINKS = [
     href: "/about",
     text: "Sobre mim",
     img: "me.png",
-    alt: "Close de rosto com olhos para cima e piercing no nariz fazendo careta",
+    alt: "Rosto de mulher com cabelo metade verde e metade preto, olhando para a câmera estando levemente acima da câmera, com piercing no septo do nariz e o céu azul ao fundo",
   },
   { href: "/career", text: "Carreira", img: "code.png", alt: "Tag HTML vazia" },
   {
