@@ -15,7 +15,7 @@ export default function DownloadButton({ href, text }: DownloadButtonProps) {
     <div className={styles.container}>
       <a
         className={`${styles.downloadBtn} ${styles.btnLink}`}
-        href={isDev ? href : `/dani/${href}`}
+        href={isDev ? href : `/dani/assets/${href}`}
         target="_blank"
       >
         {text}
