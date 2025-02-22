@@ -32,7 +32,7 @@
   }
 
   details > div {
-    padding: 16px 32px;
+    padding: 16px;
   }
 
   header {
@@ -71,6 +71,11 @@
 
 .bodyContainer {
   padding: 64px;
+
+  @media (width < 600px) {
+    padding: 64px 16px;
+  }
+
   overflow-x: auto;
 
   p {
