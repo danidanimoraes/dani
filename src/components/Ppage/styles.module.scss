@@ -26,6 +26,11 @@
     list-style-type: "🔽";
   }
 
+  details > summary:hover {
+    box-shadow: 5px 0px 9px 2px #85f1f7;
+    border-radius: 6px;
+  }
+
   details > div {
     padding: 16px 32px;
   }
