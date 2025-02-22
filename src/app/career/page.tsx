@@ -22,6 +22,7 @@ export default async function Home() {
         MDXContainer: MDXContainer,
         Divider: Divider,
         DownloadButton: DownloadButton,
+        CustomImage: CustomImage,
         img: CustomImage,
       }}
     />

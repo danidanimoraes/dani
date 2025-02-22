@@ -20,6 +20,7 @@ export default async function Areas() {
         Tag: Tag,
         MDXContainer: MDXContainer,
         Divider: Divider,
+        CustomImage: CustomImage,
         img: CustomImage,
       }}
     />
