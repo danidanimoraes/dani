@@ -20,11 +20,24 @@
   border-radius: 50%;
   box-shadow: -5px 5px 10px 10px #3e2f6e, 5px -5px 10px 10px #3e2f6e;
 
+  @media (width < 600px) {
+    display: none;
+  }
+
   img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     object-fit: cover;
+  }
+}
+
+.straigth {
+  .circle,
+  .hoveredCircle {
+    @media (width < 600px) {
+      display: none;
+    }
   }
 }
 

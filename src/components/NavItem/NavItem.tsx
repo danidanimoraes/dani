@@ -12,6 +12,7 @@ type NavItemProps = {
   text: string;
   hoveredItem: string;
   size?: NavBarSize;
+  straigth?: boolean;
   setHoveredItem: (href: string) => void;
 };
 
@@ -27,6 +28,7 @@ export default function NavItem({
   text,
   hoveredItem,
   size = "s",
+  straigth = false,
   setHoveredItem,
   children,
 }: React.PropsWithChildren<NavItemProps>) {
@@ -36,7 +38,9 @@ export default function NavItem({
       onMouseEnter={() => setHoveredItem(href)}
       className={`${barriecito.variable}`}
     >
-      <div className={styles.linkWrapper}>
+      <div
+        className={`${styles.linkWrapper} ${straigth ? styles.straigth : ""}`}
+      >
         <div className={`${styles.circle} ${size === "l" ? styles.l : ""}`}>
           {children}
         </div>

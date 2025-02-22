@@ -28,6 +28,7 @@ export default function NavBar({ straigth, size }: NavBarProps) {
             text={text}
             hoveredItem={hoveredItem}
             setHoveredItem={setHoveredItem}
+            straigth={straigth}
           >
             <img src={`/dani/${img}`} alt={alt} />
           </NavItem>
