@@ -9,10 +9,12 @@ export default function Ppage({
 }>) {
   return (
     <div className={styles.container}>
-      <div className={styles.navbarContainer}>
-        <NavBar straigth={true} />
-      </div>
-      <Divider />
+      <header>
+        <div className={styles.navbarContainer}>
+          <NavBar straigth={true} />
+        </div>
+        <Divider />
+      </header>
       <div className={styles.bodyContainer}>{children}</div>
     </div>
   );
