@@ -24,7 +24,7 @@ export default function CustomImage(props: React.HTMLProps<HTMLImageElement>) {
             className={styles.altText}
             style={{ maxWidth: maxWidthAltText }}
           >
-            {props.alt}
+            {process.env.NODE_ENV}
           </span>
         ) : null}
       </div>
