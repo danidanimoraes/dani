@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 import * as React from "react";
 import { Barriecito } from "next/font/google";
 import { NavBarSize } from "../NavBar/Navbar";
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 
 type NavItemProps = {
   href: string;
@@ -32,6 +32,8 @@ export default function NavItem({
   setHoveredItem,
   children,
 }: React.PropsWithChildren<NavItemProps>) {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <Link
       href={href}
@@ -44,7 +46,7 @@ export default function NavItem({
         <div className={`${styles.circle} ${size === "l" ? styles.l : ""}`}>
           {children}
         </div>
-        {hoveredItem === href ? (
+        {!prefersReducedMotion && hoveredItem === href ? (
           <motion.div
             className={`${styles.hoveredCircle} ${
               size === "l" ? styles.l : ""

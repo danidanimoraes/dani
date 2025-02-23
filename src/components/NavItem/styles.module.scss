@@ -11,6 +11,12 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
+  @media (prefers-reduced-motion) {
+    &:hover {
+      box-shadow: -5px 5px 10px 10px #3e2f6e, 5px -5px 10px 10px #3e2f6e;
+    }
+  }
 }
 
 .hoveredCircle {
