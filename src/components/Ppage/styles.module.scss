@@ -71,6 +71,8 @@
 
 .bodyContainer {
   padding: 64px;
+  max-width: 100ch;
+  margin: auto;
 
   @media (width < 600px) {
     padding: 64px 16px;
