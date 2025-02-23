@@ -9,13 +9,13 @@ interface DownloadButtonProps {
 }
 
 export default function DownloadButton({ href, text }: DownloadButtonProps) {
-  const isDev = process.env.NODE_ENV === "development";
+  // const isDev = process.env.NODE_ENV === "development";
 
   return (
     <div className={styles.container}>
       <a
         className={`${styles.downloadBtn} ${styles.btnLink}`}
-        href={isDev ? href : `/dani/assets/${href}`}
+        href={href}
         target="_blank"
       >
         {text}
