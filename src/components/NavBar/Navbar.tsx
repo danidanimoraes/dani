@@ -57,7 +57,7 @@ const LINKS = [
   {
     href: "/about",
     text: "Sobre mim",
-    img: "me.png",
+    img: "dani3.png",
     alt: "Rosto de mulher com cabelo metade verde e metade preto, olhando para a câmera estando levemente acima da câmera, com piercing no septo do nariz e o céu azul ao fundo",
   },
   { href: "/career", text: "Carreira", img: "code.png", alt: "Tag HTML vazia" },
