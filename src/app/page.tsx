@@ -1,4 +1,4 @@
-import NavBar from "@/components/NavBar/Navbar";
+import NavBar from "@/app/(components)/NavBar/Navbar";
 import styles from "./styles.module.scss";
 import * as React from "react";
 

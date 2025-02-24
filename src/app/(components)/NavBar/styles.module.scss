@@ -11,9 +11,12 @@
 
 .straigth {
   flex-direction: row;
+  align-items: center;
 }
 
 .notStraigth {
+  padding: 16px;
+
   a:nth-child(odd) {
     margin-top: 164px;
 

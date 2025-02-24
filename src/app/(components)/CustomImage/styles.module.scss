@@ -4,9 +4,9 @@
 
 .alt {
   border-radius: 5px;
-  border: 2px solid rgb(53, 53, 53);
-  background-color: gray;
-  color: white;
+  border: 2px solid var(--gray-darkest);
+  background-color: var(--gray-normal);
+  color: var(--white-normal);
   font-size: 1rem;
   font-weight: 500;
   width: fit-content;
@@ -19,7 +19,7 @@
 }
 
 .clicked {
-  background-color: rgb(135, 192, 192);
+  background-color: var(--cyan-light);
 }
 
 .altContainer {

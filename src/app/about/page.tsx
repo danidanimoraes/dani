@@ -2,8 +2,8 @@ import * as React from "react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import path from "path";
 import fs from "fs/promises";
-import MDXContainer from "@/components/MDXContainer/MDXContainer";
-import CustomImage from "@/components/CustomImage/CustomImage";
+import MDXContainer from "@/app/(components)/MDXContainer/MDXContainer";
+import CustomImage from "@/app/(components)/CustomImage/CustomImage";
 
 export default async function About() {
   const content = await fs.readFile(

@@ -1,5 +1,19 @@
 :root {
   --foreground: white;
+
+  --cyan-light: #87c0c0;
+  --gray-normal: gray;
+  --gray-darkest: #353535;
+  --green-light: #6ecd8e;
+  --green-darkest: #022e05;
+  --pink-lightest: #d0b4ec;
+  --pink-light: plum;
+  --pink-normal: #ca59e1;
+  --purple-normal: purple;
+  --purple-dark: #3e2f6e;
+  --purple-dark2: #341235;
+  --purple-darkest: #1b103d;
+  --white-normal: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,10 +42,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }

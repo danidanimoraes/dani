@@ -2,10 +2,10 @@ import * as React from "react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import path from "path";
 import fs from "fs/promises";
-import Tag from "@/components/Tag/Tag";
-import MDXContainer from "@/components/MDXContainer/MDXContainer";
-import Divider from "@/components/Divider/Divider";
-import CustomImage from "@/components/CustomImage/CustomImage";
+import Tag from "@/app/(components)/Tag/Tag";
+import MDXContainer from "@/app/(components)/MDXContainer/MDXContainer";
+import Divider from "@/app/(components)/Divider/Divider";
+import CustomImage from "@/app/(components)/CustomImage/CustomImage";
 
 export default async function Areas() {
   const content = await fs.readFile(

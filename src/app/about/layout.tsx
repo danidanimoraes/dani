@@ -1,7 +1,7 @@
-import Page from "@/components/Ppage/ppage";
+import Page from "@/app/(components)/Ppage/ppage";
 
 export const metadata = {
-  title: "Quem é a Dani?",
+  title: "Dani - Quem é a Dani?",
 };
 
 export default function AboutLayout({

@@ -5,7 +5,11 @@
 
   a {
     text-decoration: underline;
-    color: rgb(202, 89, 225);
+    color: var(--pink-normal);
+
+    &.pinkButton {
+      color: inherit;
+    }
   }
 
   ul {
@@ -27,7 +31,7 @@
   }
 
   details > summary:hover {
-    box-shadow: 5px 0px 9px 2px #85f1f7;
+    box-shadow: 5px 0px 9px 2px var(--pink-normal);
     border-radius: 6px;
   }
 
@@ -39,10 +43,10 @@
     display: flex;
     z-index: 2;
     width: 100%;
-    padding: 32px;
+    padding: 16px;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--white-normal);
     align-items: center;
 
     a {

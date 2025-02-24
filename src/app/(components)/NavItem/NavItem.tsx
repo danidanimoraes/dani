@@ -6,6 +6,7 @@ import * as React from "react";
 import { Barriecito } from "next/font/google";
 import { NavBarSize } from "../NavBar/Navbar";
 import { motion, useReducedMotion } from "motion/react";
+import { usePathname } from "next/navigation";
 
 type NavItemProps = {
   href: string;
@@ -33,29 +34,27 @@ export default function NavItem({
   children,
 }: React.PropsWithChildren<NavItemProps>) {
   const prefersReducedMotion = useReducedMotion();
+  const pathName = usePathname();
+  const isActive = pathName === href;
 
   return (
     <Link
       href={href}
       onMouseEnter={() => setHoveredItem(href)}
-      className={`${barriecito.variable}`}
+      className={`${barriecito.variable} ${styles.linkWrapper} ${
+        straigth ? styles.straigth : ""
+      } ${isActive ? styles.activeLink : ""}`}
     >
-      <div
-        className={`${styles.linkWrapper} ${straigth ? styles.straigth : ""}`}
-      >
-        <div className={`${styles.circle} ${size === "l" ? styles.l : ""}`}>
-          {children}
-        </div>
-        {!prefersReducedMotion && hoveredItem === href ? (
-          <motion.div
-            className={`${styles.hoveredCircle} ${
-              size === "l" ? styles.l : ""
-            }`}
-            layoutId="hovered-circle"
-          />
-        ) : null}
-        <p className={styles.navText}>{text}</p>
+      <div className={`${styles.circle} ${size === "l" ? styles.l : ""}`}>
+        {children}
       </div>
+      {!prefersReducedMotion && hoveredItem === href ? (
+        <motion.div
+          className={`${styles.hoveredCircle} ${size === "l" ? styles.l : ""}`}
+          layoutId="hovered-circle"
+        />
+      ) : null}
+      <p className={styles.navText}>{text}</p>
     </Link>
   );
 }

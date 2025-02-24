@@ -1,7 +1,7 @@
-import Page from "@/components/Ppage/ppage";
+import Page from "@/app/(components)/Ppage/ppage";
 
 export const metadata = {
-  title: "Fale com a Dani",
+  title: "Dani - Fale com a Dani",
 };
 
 export default function CareerLayout({

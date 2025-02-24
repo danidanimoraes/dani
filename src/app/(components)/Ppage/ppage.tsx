@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import NavBar from "@/components/NavBar/Navbar";
+import NavBar from "@/app/(components)/NavBar/Navbar";
 
 export default function Ppage({
   children,

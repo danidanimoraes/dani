@@ -3,6 +3,7 @@
 import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./styles.module.scss";
+import appStyles from "../styles.module.scss";
 
 export default function Contact() {
   const form = useRef(null);
@@ -89,7 +90,9 @@ export default function Contact() {
           </div>
         </div>
 
-        <button type="submit">Enviar email</button>
+        <button className={appStyles.pinkyButton} type="submit">
+          Enviar email
+        </button>
       </form>
     </>
   );

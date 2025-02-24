@@ -1,7 +1,7 @@
-import Page from "@/components/Ppage/ppage";
+import Page from "@/app/(components)/Ppage/ppage";
 
 export const metadata = {
-  title: "Dani em tudo",
+  title: "Dani - Multidani",
 };
 
 export default function AreasLayout({

@@ -2,8 +2,9 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: #281a55;
-  box-shadow: -5px 5px 10px 10px #1b103d, 5px -5px 10px 10px #1b103d;
+  background-color: var(--purple-darkest);
+  box-shadow: -5px 5px 10px 10px var(--purple-darkest),
+    5px -5px 10px 10px var(--purple-darkest);
 
   img {
     width: 70px;
@@ -14,7 +15,8 @@
 
   @media (prefers-reduced-motion) {
     &:hover {
-      box-shadow: -5px 5px 10px 10px #3e2f6e, 5px -5px 10px 10px #3e2f6e;
+      box-shadow: -5px 5px 10px 10px var(--purple-dark),
+        5px -5px 10px 10px var(--purple-dark);
     }
   }
 }
@@ -24,7 +26,8 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  box-shadow: -5px 5px 10px 10px #3e2f6e, 5px -5px 10px 10px #3e2f6e;
+  box-shadow: -5px 5px 10px 10px var(--purple-dark),
+    5px -5px 10px 10px var(--purple-dark);
 
   img {
     width: 70px;
@@ -61,10 +64,20 @@
   flex-direction: column;
   gap: 24px;
   align-items: center;
+  padding: 16px;
 }
 
 .navText {
   font-family: var(--font-barriecito);
   font-size: 1.4rem;
   text-align: center;
+}
+
+.link {
+  padding: 16px;
+}
+
+.activeLink {
+  border-radius: 45px;
+  box-shadow: 1px 0px 5px 2px var(--pink-normal);
 }
