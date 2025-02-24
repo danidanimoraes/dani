@@ -80,9 +80,9 @@
 
   @media (width < 600px) {
     padding: 64px 16px;
+    overflow-x: scroll;
+    max-width: 30ch;
   }
-
-  overflow-x: auto;
 
   p {
     max-width: 100ch;
