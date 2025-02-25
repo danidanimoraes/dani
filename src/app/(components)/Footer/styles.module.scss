@@ -1,0 +1,36 @@
+.container {
+  background-color: var(--blue-darkest);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+  min-height: 100px;
+
+  a {
+    text-decoration: underline;
+    color: var(--pink-normal);
+  }
+}
+
+.authorship {
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.contactList {
+  align-self: self-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 4px;
+}

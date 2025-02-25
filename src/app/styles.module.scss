@@ -1,4 +1,11 @@
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .navWrapper {
+  flex: 1;
   min-height: 100%;
   display: flex;
   flex-direction: column;

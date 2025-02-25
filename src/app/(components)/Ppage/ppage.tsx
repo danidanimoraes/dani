@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer";
 import styles from "./styles.module.scss";
 import NavBar from "@/app/(components)/NavBar/Navbar";
 
@@ -12,6 +13,7 @@ export default function Ppage({
         <NavBar straigth={true} />
       </header>
       <div className={styles.bodyContainer}>{children}</div>
+      <Footer />
     </div>
   );
 }
