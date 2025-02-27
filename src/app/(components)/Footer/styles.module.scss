@@ -1,7 +1,8 @@
 .container {
   background-color: var(--blue-darkest);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 16px;
   justify-content: space-between;
   padding: 16px;
   min-height: 100px;
@@ -26,6 +27,7 @@
   flex-direction: row;
   justify-content: flex-end;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .contact {

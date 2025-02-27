@@ -77,6 +77,8 @@
   padding: 64px;
   max-width: 100ch;
   margin: auto;
+  width: 100%;
+  max-width: 60ch;
 
   @media (width < 600px) {
     padding: 64px 16px;
