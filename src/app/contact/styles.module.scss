@@ -1,3 +1,8 @@
+.wrapper {
+  max-width: 60ch;
+  justify-self: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -19,6 +24,10 @@
 
   textarea {
     min-height: 4rem;
+  }
+
+  button {
+    width: fit-content;
   }
 }
 

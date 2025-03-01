@@ -34,7 +34,7 @@ export default function Contact() {
   };
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <p>
         Gostaria de entrar participar do processo seletivo para me contratar?
       </p>
@@ -94,6 +94,6 @@ export default function Contact() {
           Enviar email
         </button>
       </form>
-    </>
+    </div>
   );
 }
